@@ -35,7 +35,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="🎃"/>
                                 <connections>
-                                    <action selector="touchSecondCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="h0c-ub-Fxj"/>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EX8-f5-SS5"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4p2-jI-kow">
@@ -45,7 +45,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="👻"/>
                                 <connections>
-                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWc-4i-C4P"/>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QEX-7S-Ebp"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xed-LB-dLs">
@@ -55,7 +55,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <state key="normal" title="🎃"/>
                                 <connections>
-                                    <action selector="touchSecondCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LEs-gg-FOk"/>
+                                    <action selector="touchCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yx4-qr-yTG"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips: 0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UCo-UI-uq9">
@@ -71,6 +71,10 @@
                     </view>
                     <connections>
                         <outlet property="flipCountLabel" destination="UCo-UI-uq9" id="bVm-YT-Er3"/>
+                        <outletCollection property="cardButtons" destination="bRu-oj-pTv" collectionClass="NSMutableArray" id="Anp-oI-APu"/>
+                        <outletCollection property="cardButtons" destination="FMR-ww-rgK" collectionClass="NSMutableArray" id="5RN-Zj-4Bu"/>
+                        <outletCollection property="cardButtons" destination="Xed-LB-dLs" collectionClass="NSMutableArray" id="wlh-dk-FJ2"/>
+                        <outletCollection property="cardButtons" destination="4p2-jI-kow" collectionClass="NSMutableArray" id="kud-lE-Z2V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
