@@ -11,11 +11,17 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet var flipCountLabel: UILabel!
+    
     @IBAction func touchCard(_ sender: UIButton) {
 //        print("Hi Ghost")
         flipCard(withEmoji: "👻", on: sender)
     }
 
+    @IBAction func touchSecondCard(_ sender: UIButton) {
+        flipCard(withEmoji: "🎃", on: sender)
+    }
+    
     func flipCard(withEmoji emoji: String, on button: UIButton) {
         if button.currentTitle == emoji {
             button.setTitle("", for: UIControlState.normal)
